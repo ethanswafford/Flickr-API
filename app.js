@@ -6,6 +6,8 @@
 //apiKey = 0fa88275ab8da9dc47c295195a405ca9
 //secret = 37abd4fa43b2a6ef
 
+//build image class 
+
 class FlickrImageGallery {
     constructor(location) {
         this.term = 'location'
@@ -19,6 +21,8 @@ class FlickrImageGallery {
 
         document.getElementById('next').addEventListener('click', this.loadNextImage.bind(this))
     }
+
+    // start image gallery
 
     beginImageGallery() {
         setInterval(this.loadNextImage.bind(this), 2000)
